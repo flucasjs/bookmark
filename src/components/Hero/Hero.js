@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <div className="container flex flex-col gap-x-2 items-center mx-auto md:flex-row lg:max-w-[95vw] max-w-[90vw] md:pr-[0] xl:pr-[3rem] 2xl:pr-[5rem]">
       <div className="relative flex-1 basis-[50%] w-full mt-[6%] md:order-1 flex justify-end items-center">
-        <div className="z-10 max-w-[600px] xl:max-w-[800px] 2xl:max-w-[900px] w-full">
+        <div className="z-10 max-w-[600px] xl:max-w-[800px] 2xl:max-w-[850px] w-full">
           <Illustration />
         </div>
         <motion.div
@@ -17,7 +17,7 @@ export default function Hero() {
           {...slideInFromLeft}
         />
       </div>
-      <motion.div className="flex flex-col basis-[40ch] font-medium text-center flex-1 md:row-start-1 md:col-start-1 md:col-span-1 gap-y-8 md:text-left md:mb-0 text-color-secondary">
+      <motion.div className="flex flex-col basis-[20ch] md:basis-[40ch] font-medium text-center flex-1 md:row-start-1 md:col-start-1 md:col-span-1 gap-y-8 md:text-left md:mb-0 text-color-secondary">
         <motion.div
           initial="hide"
           animate="show"

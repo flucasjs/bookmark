@@ -97,14 +97,14 @@ export default function Features() {
               <AnimatePresence initial={false} mode="wait">
                 {selected === item.title ? (
                   <motion.div
-                    className="basis-[50%] lg:basis-[50%] flex-1 flex flex-col lg:max-w-[445px] mx-auto max-w-prose"
+                    className="basis-[50%] lg:basis-[50%] flex-1 flex flex-col lg:max-w-[445px] mx-auto max-w-[30ch] mt-4"
                     transition={{ duration: 0.25, ease: [0.4, 0, 0.2, 1] }}
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
                     variants={FADE_UP_ANIMATION_VARIANTS}
                   >
-                    <h2 className="mb-4 text-[1.5rem] leading-[2.17] -tracking-[0.08px] lg:text-[2rem] lg:tracking-[1.625] lg:-leading-[0.1px]">
+                    <h2 className="mb-2 md:mb-4 text-[1.5rem] leading-[2.17] -tracking-[0.08px] lg:text-[2rem] lg:tracking-[1.625] lg:-leading-[0.1px]">
                       {item.title}
                     </h2>
                     <div className="mb-8 text-sm font-normal opacity-50 lg:text-[1.125rem] lg:leading-[1.56] lg:tracking-normal">

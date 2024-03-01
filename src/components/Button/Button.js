@@ -1,4 +1,4 @@
-import { cn } from "@/lib/util";
+import { cn } from "@/lib";
 import { cva } from "cva";
 
 const buttonVariants = cva(
@@ -12,6 +12,8 @@ const buttonVariants = cva(
           "bg-[#F7F7F7] hover:bg-white hover:text-color-secondary hover:border-color-secondary hover:opacity-75 hover:border-opacity-75",
         accent:
           "text-white bg-color-accent hover:bg-white hover:text-color-accent hover:border-color-accent",
+        link:
+          "transition-colors duration-100 ease-in-out cursor-pointer hover:text-color-accent"
       },
     },
     defaultVariants: {

@@ -9,7 +9,7 @@ export default function ContactForm() {
     console.log(email);
   }
   return (
-    <div className="flex pt-0 md:py-[60px] flex-col text-center text-white bg-color-primary">
+    <div className="flex py-[50px] md:py-[60px] px-8 flex-col text-center text-white bg-color-primary">
       <div className="self-center max-w-[45ch]">
         <span className="text-[0.75rem] leading-[3.33] tracking-[4.62px] uppercase lg:text-[0.8125rem] lg:leading-[3.08]">
           35,000+ already joined
@@ -22,8 +22,9 @@ export default function ContactForm() {
           className="flex flex-col gap-4 lg:flex-row lg:gap-y-0 lg:justify-center"
         >
           <input
-            type="text"
+            type="email"
             value={email}
+            required
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
             className="h-12 py-[10px] px-[20px] rounded-[5px] lg:text-[0.875rem] lg:leading-[2] tracking-[0.25px] flex-1 basis-[60%] text-color-secondary"

@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -19,8 +20,8 @@ const position = ["self-start", "self-center", "self-end"];
 export default function Cards() {
   return (
     <div className="max-w-[950px] mx-auto flex flex-col font-medium text-color-secondary text-center pt-[4.8125rem]">
-      <div className="mb-[2.5rem] self-center max-w-prose lg:mb-[52px]">
-        <h2 className="text-[1.5rem] leading-[2.17] -tracking-[0.08px] lg:text-[2rem] lg:leading-[1.625] lg:-tracking-[0.1px] lg:mb-4">
+      <div className="mb-2 md:mb-[2.5rem] self-center lg:mb-[52px] max-w-[30ch] lg:max-w-[445px]">
+        <h2 className="text-[1.5rem] leading-[2.17] -tracking-[0.08px] lg:text-[2rem] lg:leading-[1.625] lg:-tracking-[0.1px] mb-2 md:mb-4">
           Download the extension
         </h2>
         <p className="mb-10 text-sm opacity-50 lg:text-[1.125rem] lg:leading-[1.56] lg:tracking-normal">

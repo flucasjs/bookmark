@@ -16,8 +16,8 @@ export default function Faq() {
   }
 
   return (
-    <div className="container max-w-prose lg:max-w-[100ch] self-center flex flex-col text-color-secondary font-medium text-center pt-[8.75rem] mb-[7.6875rem] lg:pt-[145px] lg:pb-[252px]">
-      <div className="mb-16 lg:mb-[56px]">
+    <div className="container max-w-[40ch] md:max-w-prose lg:max-w-[100ch] self-center flex flex-col justify-center text-color-secondary font-medium text-center pt-[8.75rem] mb-[7.6875rem] lg:pt-[145px]">
+      <div className="mb-16 lg:mb-[56px] mx-auto">
         <h2 className="text-[1.5rem] leading-[1.25] -tracking-[0.05px] mb-4 lg:text-[2rem] lg:tracking-[1.625] lg:-leading-[0.1px]">
           Frequently Asked Questions
         </h2>
@@ -37,7 +37,7 @@ export default function Faq() {
                 onClick={() => handleClick(item.heading)}
                 className="flex items-center justify-between flex-1 py-4"
                 >
-                <span className="font-normal text-[0.9375rem] md:text-[1.125rem] leading-[1.78] tracking-normal">{item.heading}</span>
+                <span className="font-normal text-[0.9375rem] md:text-[1.125rem] leading-[1.78] tracking-normal text-left">{item.heading}</span>
                 <Image src={iconArrow} alt="" className="w-4 h-3" />
               </button>
             </h3>
